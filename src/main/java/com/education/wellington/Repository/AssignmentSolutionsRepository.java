@@ -1,9 +1,10 @@
 package com.education.wellington.Repository;
 
-import com.education.wellington.Entity.Notes;
+import com.education.wellington.Entity.AssignmentSolutions;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface NotesRepository extends JpaRepository<Notes, Long> {
+public interface AssignmentSolutionsRepository extends JpaRepository<AssignmentSolutions, Long> {
+
 }

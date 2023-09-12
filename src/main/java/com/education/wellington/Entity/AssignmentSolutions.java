@@ -8,15 +8,15 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "assignments")
-public class Assignment {
+@Table(name = "assignment_solutions")
+public class AssignmentSolutions {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String questions; //multiple questions in pdf format
-    private String totalMarks;
+    private String solution; //PDF form of solutions submitted by the student
+    private Long studentId;
+    private Long assignmentId;
 }
